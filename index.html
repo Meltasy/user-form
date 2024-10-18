@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="script.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <h1>User form</h1>
+    <form novalidate>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required />
+      <label for="country">Country:</label>
+      <select id="country" name="country" required >
+        <option value="" selected disabled>Choose a country</option>
+        <option value="ch" class="country">Switzerland</option>
+        <option value="fr" class="country">France</option>
+        <option value="de" class="country">Germany</option>
+        <option value="nl" class="country">Netherlands</option>
+        <option value="uk" class="country">United Kingdom</option>
+      </select>
+      <label for="pcode">Post code:</label>
+      <input type="text" id="pcode" name="pcode" required />
+      <label for="pword">Password:</label>
+      <input type="text" id="pword" name="pword" required />
+      <label for="confirmPword">Confirm password:</label>
+      <input type="text" id="confirmPword" name="confirmPword" required />
+      <button id="button">Save</button>
+    </form>
+  </div>
+</body>
+</html>
